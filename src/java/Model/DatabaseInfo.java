@@ -10,10 +10,8 @@ package Model;
  * @author nhat anh
  */
 public interface DatabaseInfo {
-  
     public final static String HOSTNAME = "jdbc:sqlserver://localhost:1433;databaseName=Day_Care;";
     public final static String USERNAME = "swuull99";
     public final static String PASSWORD = "1212";
     public final static String driverName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-
 }

@@ -49,7 +49,7 @@
                                             <div class="content">
                                                 <ul class="thumbnails " >
                                                     <c:forEach var="al" items="${album}">
-                                                        <li class="span4 pull-right ">
+                                                        <li class="span4 pull-left ">
                                                             <div>
                                                                 <div class="thumbnail ">
                                                                     <a class="fancybox" rel="group" href="./Images/${al.img}"><img src="./Images/${al.img}"/></a>

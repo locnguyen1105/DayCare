@@ -23,19 +23,17 @@ public class Display implements DatabaseInfo {
     private String img;
     private String title;
     private int count;
+    private String admin;
 
     public Display() {
     }
 
-    public Display(int count) {
-        this.count = count;
-    }
-
-    public Display(String content, String img, String title, int count) {
+    public Display(String content, String img, String title, int count, String admin) {
         this.content = content;
         this.img = img;
         this.title = title;
         this.count = count;
+        this.admin = admin;
     }
 
     public String getContent() {
@@ -70,20 +68,30 @@ public class Display implements DatabaseInfo {
         this.count = count;
     }
 
+    public String getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(String admin) {
+        this.admin = admin;
+    }
+    
+
     public static Display getDisplay() {
         Display display = new Display();
         Connection con = null;
         try {
             Class.forName(driverName);
             con = DriverManager.getConnection(HOSTNAME, USERNAME, PASSWORD);
-            PreparedStatement stmt = con.prepareStatement("Select content, img, title, count from display");
+            PreparedStatement stmt = con.prepareStatement("Select content, img, title, count, admin from display");
             ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
                 String cont = rs.getString(1);
                 String img = rs.getString(2);
                 String title = rs.getString(3);
                 int hitcount = rs.getInt(4);
-                display = new Display(cont, img, title, hitcount);
+                String admin = rs.getString(5);
+                display = new Display(cont, img, title, hitcount, admin);
             }
         } catch (Exception ex) {
             Logger.getLogger(Display.class.getName()).log(Level.SEVERE, null, ex);

@@ -57,9 +57,9 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav" id="topMenu" data-submenu="horizontal" style="background-color: teal;">
                             <li class=" active " id="home">
-                                <a href="Home">My front page</a>
+                                <a href="Home">Home</a>
                             </li><li class="  " id="about">
-                                <a href="AboutUs">About me</a>
+                                <a href="AboutUs">About Us</a>
                             </li><li class="  " id="album">
                                 <a href="Album">Photo album</a>
                             </li><li class="  " id="contact">

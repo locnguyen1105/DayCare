@@ -34,7 +34,7 @@
         <div class="footer-page-counter" style="display: block;">
             
             <c:forEach var="n" items="${count}">
-                <span class="footer-page-counter-item">${n}</span>
+                <span class="footer-page-counter-item">${n}</span>  
             </c:forEach>
         </div>
         <div id="css_simplesite_com_fallback" class="hide"></div>

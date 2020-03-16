@@ -27,7 +27,7 @@
                                             <div class="img-simple">
                                                 <div class="image">
                                                     <a class="fancybox" rel="group" href="./Images/${display.img}"><img src="./Images/${display.img}"/></a>
-                                               
+
                                                 </div>
                                                 <i>${display.title}</i>
                                             </div>
@@ -45,7 +45,19 @@
                                                         <p id="demo"></p>
 
                                                     </h4>
-                                                    <p><span style="font-size: 16px;"><span data-mce-mark="1">${display.content}</span></p>                                                </li>
+                                                    <p><span style="font-size: 16px;">
+                                                            <span data-mce-mark="1">
+                                                                <p>
+                                                                    Address: &nbsp; ${daycare.address}<br>
+                                                                    City: &nbsp; ${daycare.city}<br>
+                                                                    Country: &nbsp; ${daycare.country}
+                                                                </p> 
+                                                                <p>
+                                                                    Tel: &nbsp; ${daycare.phone}<br>
+                                                                    Email: &nbsp; ${daycare.email}
+                                                                </p>
+                                                            </span>
+                                                    </p>                                                </li>
                                             </ul>
 
                                         </div>

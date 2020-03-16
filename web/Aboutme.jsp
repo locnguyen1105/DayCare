@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en-US" class="">
-    <title>About me</title>
+    <title>About Us</title>
     <body data-pid="423587166" data-iid="">
         <div class="container-fluid site-wrapper"> <!-- this is the Sheet -->
             <%@include file="Header.jsp" %>
@@ -20,7 +20,7 @@
                                     <div class="section article">
                                         
                                         <div class="heading wordwrapfix">
-                                            <h3 style="font-family: 'Comic Sans MS', cursive, sans-serif;">About me</h3>
+                                            <h3 style="font-family: 'Comic Sans MS', cursive, sans-serif;">About Us</h3>
                                         </div>
 
                                         <div class="content">
