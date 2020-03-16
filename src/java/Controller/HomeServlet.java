@@ -64,8 +64,6 @@ public class HomeServlet extends HttpServlet {
         HttpSession a = request.getSession();
         Display display = Display.getDisplay();              
         Daycare daycare = Daycare.getInfo();  
-        int[] arr=Display.toArray(Display.getDisplay1().getCount());       
-        a.setAttribute("arr", arr);
         a.setAttribute("display", display);         
         a.setAttribute("daycare", daycare);
         request.getRequestDispatcher("Home.jsp").forward(request, response);

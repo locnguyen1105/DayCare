@@ -19,7 +19,7 @@
                 <h4>Share this page</h4>
             </div>
             <div class="content"><span><ul>
-                        <li><a id="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://localhost:8084/DayCare/Home" target="blank"><i class="fa fa-facebook-square"></i><span>Share on Facebook</span></a></li>
+                        <li><a id="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://localhost:8084/DayCare/#" target="blank"><i class="fa fa-facebook-square"></i><span>Share on Facebook</span></a></li>
                         <li><a id="share-twitter" href="https://twitter.com/sharer/sharer.php?u=http://localhost:8084/DayCare/#" target="blank"><i class="fa fa-twitter-square"></i><span>Share on Twitter</span></a></li> 
                     </ul></span></div>
         </div>
@@ -33,7 +33,7 @@
     <div class="container">
         <div class="footer-page-counter" style="display: block;">
             
-            <c:forEach var="n" items="${arr}">
+            <c:forEach var="n" items="${count}">
                 <span class="footer-page-counter-item">${n}</span>
             </c:forEach>
         </div>

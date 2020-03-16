@@ -61,9 +61,7 @@ public class ContactServlet extends HttpServlet {
                 throws ServletException, IOException {
          HttpSession a = request.getSession();
          Daycare daycare = Daycare.getInfo();         
-        int[] arr = Display.toArray(Display.getDisplay1().getCount());
         a.setAttribute("daycare", daycare);
-        a.setAttribute("arr", arr);
         request.getRequestDispatcher("Contact.jsp").forward(request, response);
     }
 

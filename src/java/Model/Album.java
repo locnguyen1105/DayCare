@@ -23,7 +23,6 @@ public class Album implements DatabaseInfo{
      private int mid;    
     private String img;
     private Date date;
-    
 
     public Album() {
     }
@@ -44,8 +43,6 @@ public class Album implements DatabaseInfo{
         this.mid = mid;
     }
 
-    
-
     public String getImg() {
         return img;
     }
@@ -61,8 +58,6 @@ public class Album implements DatabaseInfo{
     public void setDate(Date date) {
         this.date = date;
     }
-
-    
 
     public static ArrayList<Album> getAlbum() {
         ArrayList<Album> album = new ArrayList<>();

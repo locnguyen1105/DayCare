@@ -25,7 +25,7 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </head>
 <div class="container-fluid header-wrapper" id="header" > 
-    <div class="container" style="background-color: #f98422;">
+    <div class="container" style="background-color: #e6e6e6;">
         <div class="title-wrapper">
             <div class="title-wrapper-inner">
                 <a rel="nofollow" class="logo " href="Home">
@@ -59,7 +59,7 @@
                             <li class=" active " id="home">
                                 <a href="Home">My front page</a>
                             </li><li class="  " id="about">
-                                <a href="About">About me</a>
+                                <a href="AboutUs">About me</a>
                             </li><li class="  " id="album">
                                 <a href="Album">Photo album</a>
                             </li><li class="  " id="contact">
@@ -75,10 +75,10 @@
 </div>  <!-- this is the Header content -->
 <style>
     .header-wrapper .navbar .navbar-inner .container {
-        background-color:#b91130 ;
+        background-color:#404040 ;
     }
     .header-wrapper .title-wrapper .title, .header-wrapper .title-wrapper .subtitle{    
-        color: #fff; 
+        color: black; 
         font-family: "Comic Sans MS", cursive, sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -87,7 +87,6 @@
         padding: 6px 0;   
         text-transform: none;
     }
-
 </style>
 
 
@@ -97,7 +96,7 @@
         var current = pathname.substring(pathname.lastIndexOf("/") + 1, pathname.length);
         if (current != 'Home') {
             $('#home').removeClass('active');
-            if (current == 'About') {
+            if (current == 'AboutUs') {
                 $('#about').addClass('active');
             } else if (current == 'Album') {
                 $('#album').addClass('active');

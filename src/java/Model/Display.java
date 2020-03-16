@@ -26,8 +26,9 @@ public class Display implements DatabaseInfo {
 
     public Display() {
     }
+
     public Display(int count) {
-         this.count = count;
+        this.count = count;
     }
 
     public Display(String content, String img, String title, int count) {
@@ -69,7 +70,7 @@ public class Display implements DatabaseInfo {
         this.count = count;
     }
 
-    public static  Display getDisplay() {
+    public static Display getDisplay() {
         Display display = new Display();
         Connection con = null;
         try {
@@ -117,38 +118,12 @@ public class Display implements DatabaseInfo {
         return false;
     }
 
-     public static Display getDisplay1() {
-        Display display = new Display();
-        Connection con = null;
-        try {
-            Class.forName(driverName);
-            con = DriverManager.getConnection(HOSTNAME, USERNAME, PASSWORD);
-            PreparedStatement stmt = con.prepareStatement("Select count from display");
-            ResultSet rs = stmt.executeQuery();
-            while (rs.next()) {             
-                int hitcount = rs.getInt(1);
-                display = new Display(hitcount);
-            }
-        } catch (Exception ex) {
-            Logger.getLogger(Display.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
-            try {
-                con.close();
-            } catch (SQLException ex) {
-                Logger.getLogger(Display.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-        return display;
-    }
     public static int[] toArray(int n) {
-        int[] array = { 0, 0, 0, 0, 0, 0};
+        int[] array = {0, 0, 0, 0, 0, 0};
         for (int i = 5; n > 0; i--) {
             array[i] = n % 10;
             n /= 10;
         }
         return array;
-    }
-    public static void main(String[] args) {
-       
     }
 }

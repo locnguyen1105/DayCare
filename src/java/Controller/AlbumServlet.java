@@ -63,8 +63,6 @@ public class AlbumServlet extends HttpServlet {
                 throws ServletException, IOException {
         HttpSession a = request.getSession();
         ArrayList<Album> album = Album.getAlbum();
-        int[] arr = Display.toArray(Display.getDisplay1().getCount());
-        a.setAttribute("arr", arr);
         a.setAttribute("album", album);
         request.getRequestDispatcher("Album.jsp").forward(request, response);
     }

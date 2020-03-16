@@ -6,7 +6,7 @@
     <filter>
         <filter-name>Count</filter-name>
         <filter-class>Controller.Count</filter-class>
-    </filter>  
+    </filter>
     <filter-mapping>
         <filter-name>Count</filter-name>
         <url-pattern>/*</url-pattern>
@@ -16,8 +16,8 @@
         <servlet-class>Controller.HomeServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>AboutServlet</servlet-name>
-        <servlet-class>Controller.AboutServlet</servlet-class>
+        <servlet-name>AboutUsServlet</servlet-name>
+        <servlet-class>Controller.AboutUsServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AlbumServlet</servlet-name>
@@ -32,8 +32,8 @@
         <url-pattern>/Home</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>AboutServlet</servlet-name>
-        <url-pattern>/About</url-pattern>
+        <servlet-name>AboutUsServlet</servlet-name>
+        <url-pattern>/AboutUs</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>AlbumServlet</servlet-name>

@@ -21,7 +21,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author nhat anh
  */
-public class AboutServlet extends HttpServlet {
+public class AboutUsServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -63,9 +63,7 @@ public class AboutServlet extends HttpServlet {
                 throws ServletException, IOException {
         HttpSession a = request.getSession();
         Daycare daycare = Daycare.getInfo();
-        int[] arr = Display.toArray(Display.getDisplay1().getCount());
         a.setAttribute("about", daycare);
-        a.setAttribute("arr", arr);
         request.getRequestDispatcher("Aboutme.jsp").forward(request, response);
     }
 

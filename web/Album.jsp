@@ -25,7 +25,6 @@
                                     <div class="section article">
                                         <style>    .wordwrapfix {
                                                 word-wrap:break-word;
-
                                             }
                                         </style>
                                         <div class="section">
@@ -35,7 +34,7 @@
 
                                                         <div>
                                                             <c:forEach var="al" items="${album}">
-                                                                <a class="fancybox" rel="group" href="./Images/${al.img}"><img class="mySlides"  src="./Images/${al.img}" /></a>
+                                                                <a class="fancybox" rel="group" href="./Images/${al.img}"><img class="mySlides" src="./Images/${al.img}"/></a>
                                                                 </c:forEach>
                                                             <button class="w3-button w3-display-left " onclick="plusDivs(-1)">&#10094;</button>
                                                             <button class="w3-button w3-display-right " onclick="plusDivs(1)">&#10095;</button>
@@ -60,7 +59,7 @@
                                                     </c:forEach>
                                                 </ul>
                                             </div>
-                                       </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>                           
